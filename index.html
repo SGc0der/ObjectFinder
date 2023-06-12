@@ -15,17 +15,20 @@
         <h1 class="btn btn-info heading">AI Object Finder
             <br>
             <span class="note">Enter name of object to detect. Model will only detect object if it is in the given sample.</span>
+            <center>
+                <span id="object_status"></span>
+            </center>
         </h1>
         <br>
         <br>
         <center>
             <label>Object name:</label>
-            <input class="form-control input" placeholder="Enter">
+            <input class="form-control input" id="input" placeholder="Enter">
             <br>
             <button class="btn btn-success start" onclick="start();">Start</button>
             <br>
-            <button class="btn btn-danger status"></button>
-            <button class="btn btn-warning objects"></button>
+            <button class="btn btn-danger" id="status"></button>
+            <button class="btn btn-warning" id="objects"></button>
         </center>
         <script src="main.js"></script>
     </body>
