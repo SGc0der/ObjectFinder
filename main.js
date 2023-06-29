@@ -8,6 +8,7 @@ function draw() {
     image(video, 0, 0, 500, 360);
     if(status_ != "") {
         for(i = 0; i < objects.length; i++) {
+            objectDetector.detect(video, gotResults);
             document.getElementById("status").innerHTML = "Status: Objects Detected";
             document.getElementById("objects").innerHTML = "Number of Objects = " + objects.length;
             percent = floor(objects[i].confidence * 100);
